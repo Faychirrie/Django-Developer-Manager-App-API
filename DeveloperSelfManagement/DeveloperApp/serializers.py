@@ -12,7 +12,7 @@ class RequestTypeSerializer(serializers.ModelSerializer):
 class UserRequestSerializer(serializers.ModelSerializer):
     class Meta:
         model=UserRequest
-        fields=('iuser_request_id=models','sproblem_name','sproblem_description','icompany_id','cresolution_status','ddate_raised',' dcreated_date','dupdated_date',' screated_by','supdated_by','cstatus')
+        fields=('iuser_request_id','sproblem_name','sproblem_description','icompany_id','cresolution_status','ddate_raised','dcreated_date','dupdated_date','screated_by','supdated_by','cstatus')
        
 
 class EngineerActionSerializer(serializers.ModelSerializer):
